@@ -31,7 +31,6 @@ def static_content(content):
 #                                            #
 ##############################################
 
-
 @app.route('/authenticate', methods = ['POST'])
 def authenticate():
     message = json.loads(request.data)
@@ -125,12 +124,46 @@ def delete_user():
 
 
 
+##############################################
+#                                            #
+#                 Categories                 #
+#                                            #
+##############################################
 
-##############################################
-#                                            #
-#                   IGNORE                   #
-#                                            #
-##############################################
+#Solo ejecutar /create_categories si la base de datos se borra para fines de prueba
+
+@app.route('/create_categories', methods = ['GET'])
+def create_categories():
+    db_session = db.getSession(engine)
+    Marvel = entities.Category(name="Marvel")
+    Star_Wars = entities.Category(name="Star Wars")
+    Anime = entities.Category(name="Anime")
+    Deportes = entities.Category(name="Deportes")
+    Memes = entities.Category(name="Memes")
+    db_session.add(Marvel)
+    db_session.add(Star_Wars)
+    db_session.add(Anime)
+    db_session.add(Deportes)
+    db_session.add(Memes)
+    db_session.commit()
+    return "Categories created!"
+
+
+@app.route('/categories', methods = ['GET'])
+def get_categories():
+    session = db.getSession(engine)
+    dbResponse = session.query(entities.Category)
+    data = []
+    for category in dbResponse:
+        data.append(category)
+    return Response(json.dumps(data, cls=connector.AlchemyEncoder), mimetype='application/json')
+
+
+
+
+
+
+
 
 
 
@@ -147,6 +180,7 @@ def get_users():
     return Response(json.dumps(data, cls=connector.AlchemyEncoder), mimetype='application/json')
 
 
+
 @app.route('/users/<id>', methods = ['GET'])
 def get_user(id):
     db_session = db.getSession(engine)
@@ -157,15 +191,6 @@ def get_user(id):
 
     message = { 'status': 404, 'message': 'Not Found'}
     return Response(message, status=404, mimetype='application/json')
-
-@app.route('/create_test_users', methods = ['GET'])
-def create_test_users():
-    db_session = db.getSession(engine)
-    user = entities.User(name="David", lastname="Lazo", password="1234", username="qwerty", email="davidlazo@gmail.com")
-    db_session.add(user)
-    db_session.commit()
-    return "Test user created!"
-
 
 
 

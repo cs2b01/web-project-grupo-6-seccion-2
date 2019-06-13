@@ -17,7 +17,7 @@ class User(connector.Manager.Base):
 
 class Category(connector.Manager.Base):
     __tablename__ = 'categories'
-    id      = Column(Integer, Sequence('category_id_seq'), primary_key=True)
+    id    = Column(Integer, Sequence('category_id_seq'), primary_key=True)
     name  = Column(String(50))
 
 class Question(connector.Manager.Base):
