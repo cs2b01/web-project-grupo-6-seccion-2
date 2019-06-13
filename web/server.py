@@ -11,7 +11,6 @@ engine = db.createEngine()
 
 app = Flask(__name__)
 
-
 ##############################################
 #                                            #
 #                   RENDER                   #
@@ -19,8 +18,8 @@ app = Flask(__name__)
 ##############################################
 @app.route('/')
 def index():
+    session['logged']=0
     return render_template('dologin.html')
-
 
 @app.route('/static/<content>')
 def static_content(content):
@@ -51,6 +50,14 @@ def authenticate():
         message = {'message': 'Unauthorized'}
         return Response(message, status=401, mimetype='application/json')
 
+@app.route('/current', methods=['GET'])
+def current():
+    sessiondb = db.getSession(engine)
+    user = sessiondb.query(entities.User).filter(entities.User.id == session['logged']).first()
+    js = json.dumps(user, cls=connector.AlchemyEncoder)
+    return Response(js, status=200, mimetype='application/json')
+
+
 ##############################################
 #                                            #
 #                  REGISTER                  #
@@ -80,10 +87,50 @@ def create_user():
         return Response(message, status=401, mimetype='application/json')
 
 
+##############################################
+#                                            #
+#    EDIT AND DELETE ACCOUNT IN SETTINGS     #
+#                                            #
+##############################################
+
+@app.route('/users', methods = ['PUT'])
+def update_user():
+    sessiondb = db.getSession(engine)
+    c =  json.loads(request.data)
+    try:
+        user = sessiondb.query(entities.User).filter(entities.User.id == session['logged']).first()
+        for key in c.keys():
+            setattr(user, key, c[key])
+        sessiondb.add(user)
+        sessiondb.commit()
+        message = {'message': 'Authorized'}
+        return Response(message, status=200, mimetype='application/json')
+    except Exception:
+        message = {'message': 'Unauthorized'}
+        return Response(message, status=401, mimetype='application/json')
+
+@app.route('/users', methods = ['DELETE'])
+def delete_user():
+    session_db = db.getSession(engine)
+    try:
+        users = session_db.query(entities.User).filter(entities.User.id == session['logged'])
+        for user in users:
+            session_db.delete(user)
+        session_db.commit()
+        message = {'message': 'Authorized'}
+        return Response(message, status=200, mimetype='application/json')
+    except Exception:
+        message = {'message': 'Unauthorized'}
+        return Response(message, status=401, mimetype='application/json')
 
 
 
 
+##############################################
+#                                            #
+#                   IGNORE                   #
+#                                            #
+##############################################
 
 
 
@@ -120,36 +167,7 @@ def create_test_users():
     return "Test user created!"
 
 
-@app.route('/users', methods = ['PUT'])
-def update_user():
-    session = db.getSession(engine)
-    id = request.form['key']
-    user = session.query(entities.User).filter(entities.User.id == id).first()
-    c =  json.loads(request.form['values'])
-    for key in c.keys():
-        setattr(user, key, c[key])
-    session.add(user)
-    session.commit()
-    return 'Updated User'
 
-@app.route('/users', methods = ['DELETE'])
-def delete_user():
-    id = request.form['key']
-    session = db.getSession(engine)
-    users = session.query(entities.User).filter(entities.User.id == id)
-    for user in users:
-        session.delete(user)
-    session.commit()
-    return "Deleted User"
-
-
-
-@app.route('/current', methods = ['GET'])
-def current():
-    sessiondb = db.getSession(engine)
-    user = sessiondb.query(entities.User).filter(entities.User.id == session['logged']).first()
-    js = json.dumps(user, cls=connector.AlchemyEncoder)
-    return Response(js, status=200, mimetype='application/json')
 
 if __name__ == '__main__':
     app.secret_key = ".."
