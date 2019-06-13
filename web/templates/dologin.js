@@ -1,4 +1,4 @@
-    function getData(){
+function getData(){
         var email = $('#email').val();
         var password = $('#password').val();
         var message = JSON.stringify({
@@ -13,11 +13,11 @@
             data : message,
             dataType:'json',
             success: function(response){
-                window.location.href="http://127.0.0.1:8080/static/index.html"
                 },
             error: function(response){
                 if(response['status']==401){
-                    window.location.href="http://127.0.0.1:8080/static/index.html"}
+                	$('#Incorrecta').show();
+                    }
                  else{
                 window.location.href="http://127.0.0.1:8080/static/index.html"
                   }}
