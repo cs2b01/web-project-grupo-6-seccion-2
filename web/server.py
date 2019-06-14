@@ -220,6 +220,44 @@ def get_questions():
         data.append(user)
     return Response(json.dumps(data, cls=connector.AlchemyEncoder), mimetype='application/json')
 
+##############################################
+#                                            #
+#                 Rankings                   #
+#                                            #
+##############################################
+
+@app.route('/rankings_uploads', methods = ['GET'])
+def rankings_uploads():
+    session = db.getSession(engine)
+    users = session.query(entities.User)
+    data = []
+    for user in users:
+        data.append(user)
+    data=sorted(data,key=attrgetter('uploads'),reverse=True)
+    return Response(json.dumps(data, cls=connector.AlchemyEncoder), mimetype='application/json')
+
+@app.route('/rankings_record', methods = ['GET'])
+def rankings_record():
+    session = db.getSession(engine)
+    users = session.query(entities.User)
+    data = []
+    for user in users:
+        data.append(user)
+    data=sorted(data,key=attrgetter('record'),reverse=True)
+    return Response(json.dumps(data, cls=connector.AlchemyEncoder), mimetype='application/json')
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 @app.route('/users', methods = ['GET'])
 def get_users():
