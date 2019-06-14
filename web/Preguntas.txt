@@ -4,10 +4,10 @@ Preguntas
 
 MARVEL
 ¿Cuantas veces se creyó que murió Loki?
-2
-3 <--
-1
+2 <--
+3
 4
+1
 
 ¿Cuántos eran los finales que vio Dr Strange?
 14212785
@@ -53,7 +53,7 @@ Doctor Octopus ←
 
 ¿Primer Xmen en volverse un Vengador?
 Wolverine
-Bestia
+Bestia <--
 Tormenta
 Ciclope
 
@@ -62,12 +62,68 @@ X-gen
 Radiacion
 Metagen
 Terrigen <--
+
 ¿Nombre de la raza de Venom?
 Brood
+Klyntar <--
+Badoon
+Shiar
+
+¿Primer superheroe creado?
+Capitan america
+Ironman
+4 fantasticos
+Namor <--
+
+¿Nombre de los padres de Peter Parker?
+Ben y May
+Richard y Mary <--
+Thomas y Martha
+Matthew and Linda
+
+¿A quien se le ocurrio el nombre de “Vengadores”?
+Ironman
+Capitan America
+Antman
+Wasp <--
+
+¿Como se llama el pet de falcon?
+Redwing <--
+Blackwing
+Junior
+America
+
+¿Donde fue entrenada Black WIdow?
+Shield
+Hydra
+Rusia
+Redroom <--
+
+¿Despues de la muerte del profesor X, como se llega a llamar la escuela?
+X-institute
+Jean Grey School <--
+Logan School
+Mutants School
 
 
+¿Quien ha sido miembro de los X men, Vengadores, 4 fantasticos?
+Logan <-
+Spiderman
+Antman
+Antorcha Humana
+
+¿Quien convirtio a Bucky en el soldado del invierno?
+Hydra 
+Sovieticos <--
+Nazis
+Illuminati
+
+¿Quien mato a Steve Rogers despues de la primera guerra civil?
+Iron man
+Sharon Carter <--
+Winter Soldier
+Croosbones
 . 
-
 Fútbol:
 ¿Cuántos mundiales de fútbol ha jugado la Selección peruana?
 1
@@ -347,7 +403,7 @@ Una espada
 Una relación entre hombres
 Un beso entre personas del mismo sexo
 
-¿Cuál es el único ataque que solo puede hacer Goku?
+¿Cuál es el único ataque que solo puede hacer Goku (DBZ)?
 Puño del dragón <--
 Genkidama
 Kamekameha
@@ -358,6 +414,92 @@ Kirito y Asuna <--
 Inuyasha y Kagome
 Naruto y Hinata
 Sasuke y Sakura
+
+¿Cuándo se convierte Izumi en alquimista nacional (FMA)?
+Luego de entrenar a Ed y Al
+Luego de salvar al pueblo
+Rechazó el título <--
+Luego de la muerte de su padre 
+
+¿Cuál es la pregunta que Ed le quiere hacer a AI (pero no se atreve), luego de perder sus cuerpos (FMA)?
+Si cree que todo fue en vano
+Si prefiere estar muerto
+Si quiere revivir a Trisha
+Si lo odia ←
+
+¿Cuál es la aparente razón por la que Ed no aumenta de estatura (FMA)?
+Efecto de la transmutación
+Porque no bebe leche <--
+Porque es un enano
+Se lo impiden sus automail
+
+¿Cuál es el nombre original de Hohenheim (FMA)?
+Van Hohenheim
+Theophratus Bombastus
+Esclavo 23 <--
+No se sabe
+
+¿Qué le sucedió a Hawkeye en la espalda (FMA)?
+Se la quemó Mustang <--
+Tuvo un accidente de niña
+Herida en la guerra de Ishval
+Se lastimó a sí misma
+
+¿Cuál es la primera víctima de Light en la Death Note?
+Un agresor que tomó rehenes en una guardería <--
+Un político corrupto
+Un motociclista que intentaba abusar de una mujer
+Un abusivo de su salón
+
+¿En qué idioma están escritas las instrucciones de la Death Note?
+Inglés <-- 
+Japonés
+Shinigami
+Latín
+
+¿Cuál es el precio a pagar para obtener los ojos de un Shinigami (Death Note)?
+Cada nombre que escribas tras hacer el trato, te quita una semana de vida
+La mitad de la vida de la persona suscrita al trato <--
+Pierdes al azar uno de tus otros sentidos
+Tendrás que escribir los nombres de todos los miembros de tu familia biológica
+
+¿Cuál es el verdadero nombre de L (Death Note)?
+L Lawliet <--
+Lind L. Taylor
+Nate River
+Teru Mikami
+
+¿Cuál de estas personas no hizo el trato de los ojos de Shinigami (Death Note)?
+Misa Amane
+Soichiro Yagami
+Teru Mikami
+Mello ←
+
+¿Cómo murió Light Yagami (Death Note)?
+Ryuk escribe su nombre en la libreta <--
+Es capturado y luego ejecutado
+Matsuda le dispara
+No muere, se convierte en un Shinigami
+
+¿Cómo se llama la esposa de Vegeta (DBZ)?
+Sakura
+Hinata
+Lucy
+Bulma ←
+
+MEMES:
+
+Estúpida mi ________, idiota
+Cabello ←
+Pelo
+Ropa
+Celular
+
+No sé quién eres ____
+Pero lo haré
+Pero te encontraré <--
+Pero te mataré
+Pero dímelo
 
 
 
