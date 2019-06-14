@@ -259,6 +259,9 @@ def rankings_record():
 
 
 
+
+
+
 @app.route('/users', methods = ['GET'])
 def get_users():
     session = db.getSession(engine)
