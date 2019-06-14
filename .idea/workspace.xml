@@ -2,20 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="16051b00-6d4f-42dd-a100-f5cc678983a2" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/web/static/css/subir_contenido.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/static/css/subir_pregunta.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/static/images/izquierda_pequena.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/static/images/marvel.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/templates/subir_contenido.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/templates/subir_pregunta.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/templates/subir_pregunta.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/static/css/gracias.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/static/images/gracias.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/templates/gracias.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/templates/gracias.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/entendilareferencia.db" beforeDir="false" afterPath="$PROJECT_DIR$/web/entendilareferencia.db" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/model/entities.py" beforeDir="false" afterPath="$PROJECT_DIR$/web/model/entities.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web/server.py" beforeDir="false" afterPath="$PROJECT_DIR$/web/server.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/static/css/login.css" beforeDir="false" afterPath="$PROJECT_DIR$/web/static/css/login.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/templates/main_menu.js" beforeDir="false" afterPath="$PROJECT_DIR$/web/templates/main_menu.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/templates/register.js" beforeDir="false" afterPath="$PROJECT_DIR$/web/templates/register.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/static/images/cs.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/static/images/home.png" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/web/templates/settings.js" beforeDir="false" afterPath="$PROJECT_DIR$/web/templates/settings.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/templates/subir_contenido.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/templates/subir_contenido.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/templates/subir_pregunta.js" beforeDir="false" afterPath="$PROJECT_DIR$/web/templates/subir_pregunta.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -29,51 +27,66 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/server.py">
+        <entry file="file://$PROJECT_DIR$/web/templates/gracias.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="19">
-              <caret line="181" column="17" lean-forward="true" selection-start-line="181" selection-start-column="17" selection-end-line="181" selection-end-column="17" />
+            <state relative-caret-position="15">
+              <caret line="24" column="34" selection-start-line="24" selection-start-column="34" selection-end-line="24" selection-end-column="34" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/templates/main_menu.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="285">
+              <caret line="19" column="13" lean-forward="true" selection-start-line="19" selection-end-line="37" />
               <folding>
-                <element signature="e#571#609#0" />
-                <element signature="e#671#702#0" />
-                <element signature="e#1013#1627#0" />
-                <element signature="e#1516#1627#0" />
-                <element signature="e#1688#1938#0" />
-                <element signature="e#2240#2953#0" />
-                <element signature="e#3255#4197#0" />
-                <element signature="e#3906#4394#0" />
-                <element signature="e#4715#5180#0" />
-                <element signature="e#5254#5508#0" />
-                <element signature="e#5673#5941#0" />
+                <element signature="n#div#0;n#body#0;n#html#0;n#!!top" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/templates/subir_pregunta.html">
+        <entry file="file://$PROJECT_DIR$/web/server.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="130">
-              <caret line="60" column="57" selection-start-line="60" selection-start-column="57" selection-end-line="60" selection-end-column="57" />
+            <state relative-caret-position="-12">
+              <caret line="212" lean-forward="true" selection-start-line="212" selection-end-line="212" />
               <folding>
-                <element signature="n#head#0;n#html#0;n#!!top" />
+                <element signature="e#565#659#0" />
+                <element signature="e#726#757#0" />
+                <element signature="e#1067#1681#0" />
+                <element signature="e#1742#1992#0" />
+                <element signature="e#2295#3008#0" />
+                <element signature="e#3310#3887#0" />
+                <element signature="e#3955#4443#0" />
+                <element signature="e#4847#5312#0" />
+                <element signature="e#5386#5640#0" />
+                <element signature="e#5720#5988#0" />
+                <element signature="e#6062#6591#0" />
+                <element signature="e#6902#7469#0" />
+                <element signature="e#7580#7826#0" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/templates/gracias.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="150">
+              <caret line="10" selection-start-line="10" selection-end-line="10" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/web/static/css/subir_pregunta.css">
+        <entry file="file://$PROJECT_DIR$/web/static/css/gracias.css">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="45">
-              <caret line="3" column="47" selection-start-line="3" selection-start-column="47" selection-end-line="3" selection-end-column="47" />
+              <caret line="3" column="44" selection-start-line="3" selection-start-column="44" selection-end-line="3" selection-end-column="44" />
             </state>
           </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/templates/subir_pregunta.js">
-          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
     </leaf>
@@ -160,18 +173,22 @@
         <option value="$PROJECT_DIR$/web/templates/dologin.html" />
         <option value="$PROJECT_DIR$/web/templates/dologin.js" />
         <option value="$PROJECT_DIR$/web/templates/register.html" />
-        <option value="$PROJECT_DIR$/web/model/entities.py" />
         <option value="$PROJECT_DIR$/web/static/css/subir_contenido.css" />
         <option value="$PROJECT_DIR$/web/templates/main_menu.js" />
-        <option value="$PROJECT_DIR$/web/templates/settings.js" />
         <option value="$PROJECT_DIR$/web/templates/register.js" />
         <option value="$PROJECT_DIR$/web/static/css/login.css" />
         <option value="$PROJECT_DIR$/web/templates/subir_contenido.html" />
-        <option value="$PROJECT_DIR$/web/templates/subir_pregunta.js" />
         <option value="$PROJECT_DIR$/web/templates/subir_contenido.js" />
-        <option value="$PROJECT_DIR$/web/server.py" />
         <option value="$PROJECT_DIR$/web/templates/subir_pregunta.html" />
         <option value="$PROJECT_DIR$/web/static/css/subir_pregunta.css" />
+        <option value="$PROJECT_DIR$/web/templates/settings.js" />
+        <option value="$PROJECT_DIR$/web/model/entities.py" />
+        <option value="$PROJECT_DIR$/web/entendilareferencia.db" />
+        <option value="$PROJECT_DIR$/web/templates/subir_pregunta.js" />
+        <option value="$PROJECT_DIR$/web/server.py" />
+        <option value="$PROJECT_DIR$/web/templates/gracias.js" />
+        <option value="$PROJECT_DIR$/web/templates/gracias.html" />
+        <option value="$PROJECT_DIR$/web/static/css/gracias.css" />
       </list>
     </option>
   </component>
@@ -237,7 +254,7 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/web/static/css" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/web/static/images" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
@@ -248,8 +265,8 @@
       <recent name="$PROJECT_DIR$" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/web/static/css" />
       <recent name="$PROJECT_DIR$/web/static/images" />
+      <recent name="$PROJECT_DIR$/web/static/css" />
       <recent name="$PROJECT_DIR$/static/images" />
       <recent name="$PROJECT_DIR$/Proyecto" />
     </key>
@@ -361,12 +378,12 @@
       <workItem from="1560391645218" duration="1218000" />
       <workItem from="1560396556661" duration="2000" />
       <workItem from="1560400343642" duration="9745000" />
-      <workItem from="1560436272087" duration="27903000" />
+      <workItem from="1560436272087" duration="34845000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="54199000" />
+    <option name="totallyTimeSpent" value="61141000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="27" width="1366" height="741" extended-state="6" />
@@ -383,7 +400,7 @@
       <window_info anchor="bottom" id="Message" order="4" />
       <window_info anchor="bottom" id="Debug" order="5" weight="0.4" />
       <window_info anchor="bottom" id="Find" order="6" weight="0.328594" />
-      <window_info active="true" anchor="bottom" id="Run" order="7" visible="true" weight="0.4170616" />
+      <window_info active="true" anchor="bottom" id="Run" order="7" visible="true" weight="0.5308057" />
       <window_info anchor="bottom" id="Cvs" order="8" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="9" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="10" />
@@ -427,13 +444,10 @@
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/web_project_grupo_6_seccion_2$server__1_.coverage" NAME="server (1) Coverage Results" MODIFIED="1560385635748" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/web_project_grupo_6_seccion_2$server.coverage" NAME="server Coverage Results" MODIFIED="1560470660046" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/web" />
+    <SUITE FILE_PATH="coverage/web_project_grupo_6_seccion_2$server.coverage" NAME="server Coverage Results" MODIFIED="1560482034653" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/web" />
     <SUITE FILE_PATH="coverage/web_project_grupo_6_seccion_2$entities.coverage" NAME="entities Coverage Results" MODIFIED="1560384569500" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/model" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/web/database/connector.py" />
-    <entry file="file://$PROJECT_DIR$/web/templates/crud_users.html" />
-    <entry file="file://$PROJECT_DIR$/web/templates/crud_users.js" />
     <entry file="file://$PROJECT_DIR$/database/__init__.py" />
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
@@ -481,13 +495,6 @@
     <entry file="file://$PROJECT_DIR$/web/templates/chatweb.html" />
     <entry file="file://$PROJECT_DIR$/web/templates/chatweb.js" />
     <entry file="file://$PROJECT_DIR$/web/templates/styles.css" />
-    <entry file="file://$PROJECT_DIR$/web/templates/main_menu.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="600">
-          <caret line="40" lean-forward="true" selection-start-line="40" selection-end-line="40" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/web/templates/rankings.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="150">
@@ -506,21 +513,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="23">
           <caret line="21" column="10" selection-start-line="21" selection-start-column="10" selection-end-line="21" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/templates/settings.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="487">
-          <caret line="69" column="7" lean-forward="true" selection-start-line="69" selection-start-column="7" selection-end-line="69" selection-end-column="7" />
-          <folding>
-            <element signature="n#head#0;n#html#0;n#!!top" />
-            <element signature="n#div#0;n#div#0;n#form#0;n#div#1;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#div#1;n#form#0;n#div#1;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#div#2;n#form#0;n#div#1;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#style#0;n#label#0;n#div#4;n#form#0;n#div#1;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#div#2;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -543,34 +535,6 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/web/static/images/izquierda_pequena.png">
       <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/static/css/subir_contenido.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="1" selection-start-line="1" selection-end-line="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/templates/settings.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" selection-start-line="5" selection-end-line="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/templates/main_menu.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="16" selection-start-line="4" selection-start-column="16" selection-end-line="4" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/templates/register.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="12" selection-start-line="10" selection-start-column="12" selection-end-line="10" selection-end-column="12" />
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/web/templates/dologin.js">
       <provider selected="true" editor-type-id="text-editor">
@@ -605,33 +569,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/model/entities.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-135">
-          <caret line="3" column="15" lean-forward="true" selection-start-line="3" selection-start-column="15" selection-end-line="3" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/server.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="19">
-          <caret line="181" column="17" lean-forward="true" selection-start-line="181" selection-start-column="17" selection-end-line="181" selection-end-column="17" />
-          <folding>
-            <element signature="e#571#609#0" />
-            <element signature="e#671#702#0" />
-            <element signature="e#1013#1627#0" />
-            <element signature="e#1516#1627#0" />
-            <element signature="e#1688#1938#0" />
-            <element signature="e#2240#2953#0" />
-            <element signature="e#3255#4197#0" />
-            <element signature="e#3906#4394#0" />
-            <element signature="e#4715#5180#0" />
-            <element signature="e#5254#5508#0" />
-            <element signature="e#5673#5941#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/web/static/css/main_menu.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
@@ -639,36 +576,155 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/templates/subir_contenido.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="431">
-          <caret line="58" column="81" selection-start-line="58" selection-start-column="81" selection-end-line="58" selection-end-column="81" />
-          <folding>
-            <element signature="e#36#163#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/templates/subir_pregunta.js">
-      <provider selected="true" editor-type-id="text-editor" />
+    <entry file="file://$PROJECT_DIR$/web/static/images/prueba1.jpg">
+      <provider selected="true" editor-type-id="images" />
     </entry>
     <entry file="file://$PROJECT_DIR$/web/templates/subir_pregunta.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="130">
-          <caret line="60" column="57" selection-start-line="60" selection-start-column="57" selection-end-line="60" selection-end-column="57" />
+        <state relative-caret-position="542">
+          <caret line="66" column="6" lean-forward="true" selection-start-line="66" selection-start-column="6" selection-end-line="66" selection-end-column="6" />
           <folding>
             <element signature="n#head#0;n#html#0;n#!!top" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/static/images/prueba1.jpg">
-      <provider selected="true" editor-type-id="images" />
+    <entry file="file://$PROJECT_DIR$/web/templates/settings.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="17" column="7" lean-forward="true" selection-start-line="17" selection-start-column="7" selection-end-line="17" selection-end-column="7" />
+          <folding>
+            <element signature="n#head#0;n#html#0;n#!!top" />
+            <element signature="n#div#0;n#div#0;n#form#0;n#div#1;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#1;n#form#0;n#div#1;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#2;n#form#0;n#div#1;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#style#0;n#label#0;n#div#4;n#form#0;n#div#1;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#div#2;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" />
+          </folding>
+        </state>
+      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/web/static/css/subir_pregunta.css">
       <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="16" selection-start-column="16" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/templates/register.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="16" column="22" selection-start-line="16" selection-start-column="22" selection-end-line="16" selection-end-column="22" />
+          <folding>
+            <element signature="e#583#683#0" />
+            <element signature="e#722#953#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/entendilareferencia.db">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/model/entities.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="435">
+          <caret line="32" lean-forward="true" selection-start-line="32" selection-end-line="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/templates/main_menu.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="16" selection-start-line="4" selection-start-column="16" selection-end-line="4" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/templates/settings.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="16" lean-forward="true" selection-start-line="4" selection-start-column="16" selection-end-line="4" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/templates/subir_pregunta.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/templates/main_menu.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="19" column="13" lean-forward="true" selection-start-line="19" selection-end-line="37" />
+          <folding>
+            <element signature="n#div#0;n#body#0;n#html#0;n#!!top" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/templates/subir_contenido.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="45" lean-forward="true" selection-start-line="45" selection-end-line="45" />
+          <folding>
+            <element signature="e#36#163#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/static/css/subir_contenido.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="85" selection-start-line="85" selection-end-line="89" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/templates/gracias.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" selection-start-line="10" selection-end-line="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/templates/gracias.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="24" column="34" selection-start-line="24" selection-start-column="34" selection-end-line="24" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/server.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-12">
+          <caret line="212" lean-forward="true" selection-start-line="212" selection-end-line="212" />
+          <folding>
+            <element signature="e#565#659#0" />
+            <element signature="e#726#757#0" />
+            <element signature="e#1067#1681#0" />
+            <element signature="e#1742#1992#0" />
+            <element signature="e#2295#3008#0" />
+            <element signature="e#3310#3887#0" />
+            <element signature="e#3955#4443#0" />
+            <element signature="e#4847#5312#0" />
+            <element signature="e#5386#5640#0" />
+            <element signature="e#5720#5988#0" />
+            <element signature="e#6062#6591#0" />
+            <element signature="e#6902#7469#0" />
+            <element signature="e#7580#7826#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/static/images/menu.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/static/images/home.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/static/images/cs.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/static/css/gracias.css">
+      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="45">
-          <caret line="3" column="47" selection-start-line="3" selection-start-column="47" selection-end-line="3" selection-end-column="47" />
+          <caret line="3" column="44" selection-start-line="3" selection-start-column="44" selection-end-line="3" selection-end-column="44" />
         </state>
       </provider>
     </entry>

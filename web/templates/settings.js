@@ -11,6 +11,7 @@ $.getJSON("/current", function(data){
     document.getElementById("password").value = data['password'];});
 
 function Actualizar(){
+            $('#success').show();
             $.ajax({
                 url: 'http://127.0.0.1:8080/users',
                 type: 'PUT',
@@ -28,7 +29,7 @@ function Actualizar(){
             error: function(response){
                 if(response['status']==401){}
                  else{
-                 $('#success').show();
+                 window.location.href="http://127.0.0.1:8080/static/main_menu.html"
                   }}
             });
         }
@@ -38,7 +39,7 @@ function Borracuenta(){
                 url: 'http://127.0.0.1:8080/users',
                 type: 'DELETE',
                 success: function(response){
-                                    window.location.href="http://127.0.0.1:8080/static/dologin.html"
+                    window.location.href="http://127.0.0.1:8080/static/dologin.html"
                 },
             error: function(response){
                 if(response['status']==401){}

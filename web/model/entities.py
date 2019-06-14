@@ -11,8 +11,8 @@ class User(connector.Manager.Base):
     lastname   = Column(String(150))
     password = Column(String(50))
     username    = Column(String(50))
-    record     = Column(Integer,default=0)
-    uploads     = Column(Integer,default=0)
+    record     = Column(Integer)
+    uploads     = Column(Integer)
 
 
 class Category(connector.Manager.Base):

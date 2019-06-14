@@ -78,7 +78,9 @@ def create_user():
         email=c['email'],
         name=c['name'],
         lastname=c['lastname'],
-        password=c['password'])
+        password=c['password'],
+        record=0,
+        uploads=0)
         sessiondb.add(user)
         sessiondb.commit()
         message = {'message': 'Authorized'}
@@ -96,6 +98,7 @@ def create_user():
 
 @app.route('/users', methods = ['PUT'])
 def update_user():
+    time.sleep(1)
     sessiondb = db.getSession(engine)
     c =  json.loads(request.data)
     try:
@@ -182,17 +185,40 @@ def set_category():
         message = {'message': 'Unauthorized'}
         return Response(message, status=401, mimetype='application/json')
 
-
-
 ##############################################
 #                                            #
 #                 Questions                  #
 #                                            #
 ##############################################
 
+@app.route('/questions', methods = ['POST'])
+def create_question():
+    sessiondb = db.getSession(engine)
+    c =  json.loads(request.data)
+    try:
+        user = entities.Question(
+        statment=c['statment'],
+        answer=c['answer'],
+        wrong1=c['wrong1'],
+        wrong2=c['wrong2'],
+        wrong3=c['wrong3'],
+        category_id=c['category_id'])
+        sessiondb.add(user)
+        sessiondb.commit()
+        message = {'message': 'Authorized'}
+        return Response(message, status=200, mimetype='application/json')
+    except Exception:
+        message = {'message': 'Unauthorized'}
+        return Response(message, status=401, mimetype='application/json')
 
-
-
+@app.route('/questions', methods = ['GET'])
+def get_questions():
+    session = db.getSession(engine)
+    dbResponse = session.query(entities.Question)
+    data = []
+    for user in dbResponse:
+        data.append(user)
+    return Response(json.dumps(data, cls=connector.AlchemyEncoder), mimetype='application/json')
 
 
 @app.route('/users', methods = ['GET'])
@@ -202,7 +228,7 @@ def get_users():
     data = []
     for user in dbResponse:
         data.append(user)
-    return Response(json.dumps(data, cls=connector.AlchemyEncoder), mimetype='application/json')
+    return Response(json.dumps(data, cls=connector.AlchemyEncoder), mimetype='application/json')\
 
 
 
