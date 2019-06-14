@@ -8,7 +8,7 @@ from operator import  itemgetter,attrgetter
 
 db = connector.Manager()
 engine = db.createEngine()
-
+cache = {} # Users cache
 app = Flask(__name__)
 
 ##############################################
@@ -246,45 +246,46 @@ def rankings_record():
     data=sorted(data,key=attrgetter('record'),reverse=True)
     return Response(json.dumps(data, cls=connector.AlchemyEncoder), mimetype='application/json')
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+##############################################
+#                                            #
+#             Get Users w/Cache              #
+#                                            #
+##############################################
 
 @app.route('/users', methods = ['GET'])
 def get_users():
-    session = db.getSession(engine)
-    dbResponse = session.query(entities.User)
-    data = []
-    for user in dbResponse:
-        data.append(user)
-    return Response(json.dumps(data, cls=connector.AlchemyEncoder), mimetype='application/json')\
-
-
-
-@app.route('/users/<id>', methods = ['GET'])
-def get_user(id):
-    db_session = db.getSession(engine)
-    users = db_session.query(entities.User).filter(entities.User.id == id)
+    key = 'getUsers'
+    if key not in cache.keys():
+        session = db.getSession(engine)
+        dbResponse = session.query(entities.User)
+        cache[key] = dbResponse
+    users = cache[key]
+    response = []
     for user in users:
-        js = json.dumps(user, cls=connector.AlchemyEncoder)
-        return  Response(js, status=200, mimetype='application/json')
-
-    message = { 'status': 404, 'message': 'Not Found'}
-    return Response(message, status=404, mimetype='application/json')
+        response.append(user)
+    return json.dumps(response, cls=connector.AlchemyEncoder)
 
 
+##############################################
+#                                            #
+#                    Game                    #
+#                                            #
+##############################################
+
+
+
+
+
+
+
+
+
+
+##############################################
+#                                            #
+#                   Run                      #
+#                                            #
+##############################################
 
 if __name__ == '__main__':
     app.secret_key = ".."
