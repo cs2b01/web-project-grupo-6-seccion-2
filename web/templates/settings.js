@@ -1,4 +1,10 @@
 $.getJSON("/current", function(data){
+         if(data==null){
+          window.location.href="http://127.0.0.1:8080/static/dologin.html"
+         }
+             });
+
+$.getJSON("/current", function(data){
     document.getElementById("username").value = data['username'];
     document.getElementById("name").value = data['name'];
     document.getElementById("lastname").value = data['lastname'];

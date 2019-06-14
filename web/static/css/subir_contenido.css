@@ -15,9 +15,59 @@ align-content: center;
 }
 
 .card{
-height: 420px;
-margin-top: auto;
-margin-bottom: auto;
+height: 500px;
+margin-top: 10px;
+margin-bottom: 10px;
+width: 450px;
+background-color: rgba(0,0,0,0.75) !important;
+}
+
+#siguiente {
+    background-image: url("/static/images/izquierda_pequena.png"); /* 16px x 16px */
+    background-color:#FFC312 ;
+    background-repeat: no-repeat;
+    border: none;
+    cursor: pointer;
+    width: 60px;
+    height: 40px;
+    align-content: center;
+    background-position: center;
+    padding-left: 16px;
+    vertical-align: middle;
+}
+
+#seleccionar{
+    width: 265px;
+    margin-left: 10px;
+    font-weight: bolder;
+    font-size: 22px;
+    align-content: center;
+    alignment: center;
+    text-align: center;
+    height: 40px;
+}
+#anterior{
+    background-image: url("/static/images/derecha_pequena.png"); /* 16px x 16px */
+    background-color:#FFC312 ;
+    background-repeat: no-repeat;
+    border: none;
+    width: 60px;
+    height: 40px;
+    align-content: center;
+    background-position: center;
+    padding-left: 16px;
+    vertical-align: middle;
+    margin-left: 10px;
+
+}
+#anterior :hover{
+    background-color:white ;
+    color: white;
+
+}
+
+#categoria{
+height: 80px;
 width: 450px;
 background-color: rgba(0,0,0,0.75) !important;
 }
@@ -33,7 +83,7 @@ color: white;
 cursor: pointer;
 }
 
-.card-header h3{
+.card-header h1{
 color: #FFC312;
 font-weight: bold;
 
@@ -76,7 +126,6 @@ margin-right: 5px;
 .login_btn{
 color: black;
 background-color: #FFC312;
-font-weight: bold;
 width: 100px;
 }
 

@@ -18,7 +18,8 @@ app = Flask(__name__)
 ##############################################
 @app.route('/')
 def index():
-    session['logged']=0
+    session['logged']=None
+    session['category']=None
     return render_template('dologin.html')
 
 @app.route('/static/<content>')
@@ -62,6 +63,7 @@ def current():
 #                  REGISTER                  #
 #                                            #
 ##############################################
+
 @app.route('/users', methods = ['POST'])
 def create_user():
     sessiondb = db.getSession(engine)
@@ -122,8 +124,6 @@ def delete_user():
         message = {'message': 'Unauthorized'}
         return Response(message, status=401, mimetype='application/json')
 
-
-
 ##############################################
 #                                            #
 #                 Categories                 #
@@ -159,11 +159,36 @@ def get_categories():
     return Response(json.dumps(data, cls=connector.AlchemyEncoder), mimetype='application/json')
 
 
+@app.route('/current_category', methods=['GET'])
+def current_category():
+    sessiondb = db.getSession(engine)
+    category = sessiondb.query(entities.Category).filter(entities.Category.id == session['category']).first()
+    js = json.dumps(category, cls=connector.AlchemyEncoder)
+    return Response(js, status=200, mimetype='application/json')
+
+@app.route('/set_category', methods = ['POST'])
+def set_category():
+    message = json.loads(request.data)
+    id = message['id']
+    db_session = db.getSession(engine)
+    try:
+        category = db_session.query(entities.Category
+            ).filter(entities.Category.id == id
+            ).one()
+        message = {'message': 'Authorized'}
+        session['category'] = category.id
+        return Response(message, status=200, mimetype='application/json')
+    except Exception:
+        message = {'message': 'Unauthorized'}
+        return Response(message, status=401, mimetype='application/json')
 
 
 
-
-
+##############################################
+#                                            #
+#                 Questions                  #
+#                                            #
+##############################################
 
 
 

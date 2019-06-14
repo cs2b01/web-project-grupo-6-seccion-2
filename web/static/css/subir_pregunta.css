@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Numans');
 
 html,body{
-background-image:url("/static/images/wallpaperlogin.jpg");
+background-image:url("/static/images/prueba1.jpg");
 background-size: cover;
 background-repeat: no-repeat;
 height: 100%;
@@ -15,10 +15,10 @@ align-content: center;
 }
 
 .card{
-height: 420px;
+height: 750px;
 margin-top: auto;
 margin-bottom: auto;
-width: 450px;
+width: 800px;
 background-color: rgba(0,0,0,0.75) !important;
 }
 
@@ -55,6 +55,12 @@ color: black;
 border:1px !important;
 }
 
+
+#enviar {
+    font-weight: bold;
+    font-size: 25px;
+    width: auto;
+      }
 input:focus{
 outline: 0 0 0 0  !important;
 box-shadow: 0 0 0 0 !important;
@@ -80,6 +86,26 @@ font-weight: bold;
 width: 100px;
 }
 
+#statment{
+    height: 100px;
+    text-align: justify-all;
+}
+#answer{
+    height: 100px;
+    text-align: justify-all;
+}
+#wrong1{
+    height: 100px;
+    text-align: justify-all;
+}
+#wrong2{
+    height: 100px;
+    text-align: justify-all;
+}
+#wrong3{
+    height: 100px;
+    text-align: justify-all;
+}
 .login_btn:hover{
 color: black;
 background-color: white;

@@ -8,7 +8,7 @@ function EnviarDatos(){
                      "username":  $('#username').val(),
                      "name":  $('#name').val(),
                      "lastname":  $('#lastname').val(),
-                     "password":  $('#password').val()
+                           "password":  $('#password').val()
                 }),
                 dataType: 'json',
                 success: function(response){
