@@ -2,15 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="16051b00-6d4f-42dd-a100-f5cc678983a2" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/web/static/images/error.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Preguntas.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Preguntas.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web/entendilareferencia.db" beforeDir="false" afterPath="$PROJECT_DIR$/web/entendilareferencia.db" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web/server.py" beforeDir="false" afterPath="$PROJECT_DIR$/web/server.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web/templates/juego.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/templates/juego.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web/templates/juego.js" beforeDir="false" afterPath="$PROJECT_DIR$/web/templates/juego.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/templates/subir_contenido.js" beforeDir="false" afterPath="$PROJECT_DIR$/web/templates/subir_contenido.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/templates/subir_pregunta.js" beforeDir="false" afterPath="$PROJECT_DIR$/web/templates/subir_pregunta.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -26,8 +21,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web/server.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="311">
-              <caret line="295" column="26" selection-start-line="295" selection-start-column="26" selection-end-line="295" selection-end-column="26" />
+            <state relative-caret-position="161">
+              <caret line="287" column="17" lean-forward="true" selection-start-line="287" selection-start-column="17" selection-end-line="287" selection-end-column="17" />
               <folding>
                 <element signature="e#0#77#0" expanded="true" />
                 <element signature="e#726#757#0" />
@@ -44,8 +39,6 @@
                 <element signature="e#8179#8472#0" />
                 <element signature="e#8551#8843#0" />
                 <element signature="e#8925#9317#0" />
-                <element signature="e#9805#10334#0" />
-                <element signature="e#10484#10721#0" />
               </folding>
             </state>
           </provider>
@@ -54,8 +47,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web/templates/juego.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="195">
-              <caret line="25" column="16" selection-start-line="25" selection-start-column="16" selection-end-line="25" selection-end-column="16" />
+            <state relative-caret-position="225">
+              <caret line="24" column="27" lean-forward="true" selection-start-line="24" selection-start-column="27" selection-end-line="24" selection-end-column="27" />
               <folding>
                 <element signature="n#style#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -77,8 +70,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/web/templates/juego.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="213">
-              <caret line="101" column="2" selection-start-line="101" selection-start-column="2" selection-end-line="101" selection-end-column="2" />
+            <state relative-caret-position="2085">
+              <caret line="214" column="10" lean-forward="true" selection-start-line="214" selection-start-column="10" selection-end-line="214" selection-end-column="10" />
             </state>
           </provider>
         </entry>
@@ -96,10 +89,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>update</find>
-      <find>border</find>
-      <find>remember</find>
-      <find>imagenes2da</find>
       <find>categoria</find>
       <find>va</find>
       <find>value</find>
@@ -126,6 +115,10 @@
       <find>uploads</find>
       <find>get</find>
       <find>ajax</find>
+      <find>stat</find>
+      <find>statement</find>
+      <find>categor</find>
+      <find>sigui</find>
     </findStrings>
     <replaceStrings>
       <replace>Usuario</replace>
@@ -133,6 +126,7 @@
       <replace>content</replace>
       <replace>innerText</replace>
       <replace>fas fa-close</replace>
+      <replace>statment</replace>
     </replaceStrings>
   </component>
   <component name="Git.Settings">
@@ -188,9 +182,9 @@
         <option value="$PROJECT_DIR$/web/static/css/juego.css" />
         <option value="$PROJECT_DIR$/web/templates/subir_contenido.js" />
         <option value="$PROJECT_DIR$/Preguntas.txt" />
-        <option value="$PROJECT_DIR$/web/server.py" />
         <option value="$PROJECT_DIR$/web/templates/subir_pregunta.js" />
         <option value="$PROJECT_DIR$/web/templates/juego.html" />
+        <option value="$PROJECT_DIR$/web/server.py" />
         <option value="$PROJECT_DIR$/web/templates/juego.js" />
       </list>
     </option>
@@ -237,6 +231,13 @@
               <item name="web-project-grupo-6-seccion-2" type="462c0819:PsiDirectoryNode" />
               <item name="web" type="462c0819:PsiDirectoryNode" />
               <item name="static" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="web-project-grupo-6-seccion-2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="web-project-grupo-6-seccion-2" type="462c0819:PsiDirectoryNode" />
+              <item name="web" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
+              <item name="images" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="web-project-grupo-6-seccion-2" type="b2602c69:ProjectViewProjectNode" />
@@ -385,12 +386,12 @@
       <workItem from="1560400343642" duration="9745000" />
       <workItem from="1560436272087" duration="46112000" />
       <workItem from="1560530662452" duration="1000" />
-      <workItem from="1560530709253" duration="26518000" />
+      <workItem from="1560530709253" duration="27824000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="98927000" />
+    <option name="totallyTimeSpent" value="100233000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="27" width="1366" height="741" extended-state="6" />
@@ -451,7 +452,7 @@
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/web_project_grupo_6_seccion_2$server__1_.coverage" NAME="server (1) Coverage Results" MODIFIED="1560385635748" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/web_project_grupo_6_seccion_2$server.coverage" NAME="server Coverage Results" MODIFIED="1560569396396" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/web" />
+    <SUITE FILE_PATH="coverage/web_project_grupo_6_seccion_2$server.coverage" NAME="server Coverage Results" MODIFIED="1560570587380" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/web" />
     <SUITE FILE_PATH="coverage/web_project_grupo_6_seccion_2$entities.coverage" NAME="entities Coverage Results" MODIFIED="1560384569500" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/model" />
   </component>
   <component name="editorHistoryManager">
@@ -742,29 +743,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/templates/juego.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="25" column="16" selection-start-line="25" selection-start-column="16" selection-end-line="25" selection-end-column="16" />
-          <folding>
-            <element signature="n#style#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#canvas#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/static/css/juego.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="32" selection-start-line="7" selection-start-column="32" selection-end-line="7" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/web/server.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="311">
-          <caret line="295" column="26" selection-start-line="295" selection-start-column="26" selection-end-line="295" selection-end-column="26" />
+        <state relative-caret-position="161">
+          <caret line="287" column="17" lean-forward="true" selection-start-line="287" selection-start-column="17" selection-end-line="287" selection-end-column="17" />
           <folding>
             <element signature="e#0#77#0" expanded="true" />
             <element signature="e#726#757#0" />
@@ -781,16 +763,33 @@
             <element signature="e#8179#8472#0" />
             <element signature="e#8551#8843#0" />
             <element signature="e#8925#9317#0" />
-            <element signature="e#9805#10334#0" />
-            <element signature="e#10484#10721#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/static/css/juego.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="32" selection-start-line="7" selection-start-column="32" selection-end-line="7" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/templates/juego.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="24" column="27" lean-forward="true" selection-start-line="24" selection-start-column="27" selection-end-line="24" selection-end-column="27" />
+          <folding>
+            <element signature="n#style#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#canvas#0;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/web/templates/juego.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="213">
-          <caret line="101" column="2" selection-start-line="101" selection-start-column="2" selection-end-line="101" selection-end-column="2" />
+        <state relative-caret-position="2085">
+          <caret line="214" column="10" lean-forward="true" selection-start-line="214" selection-start-column="10" selection-end-line="214" selection-end-column="10" />
         </state>
       </provider>
     </entry>

@@ -78,18 +78,10 @@ function establecer_pregunta(r) {
 }
 
 function siguiente_pregunta() {
-  let id_ = JSON.stringify({ "id": i });
+  let id_ = JSON.stringify({ "id": (i+1) });
   $.ajax({
-    url: "/set_category_question",
+    url: "/set_category_and_random_question",
     type: "POST",
-    contentType: "application/json",
-    data: id_,
-    dataType: "json"});
-
-
-    $.ajax({
-    url: "/get_random_question",
-    type: "GET",
     contentType: "application/json",
     data: id_,
     dataType: "json",
@@ -213,34 +205,34 @@ function loop(tiempo) {
     if (con_pregunta) {
       if (!corregir) {
         dibujar(cuadro);
-        escribir_texto(statment, "40", "Arial", 420, 200);
+        escribir_texto(statment, "25", "Arial", 420, 200);
         escribir_texto(
           respuestas_texto[respuesta_orden[0]],
           "30",
           "Arial",
           445,
-          460
+          520
         );
         escribir_texto(
           respuestas_texto[respuesta_orden[1]],
           "30",
           "Arial",
           445,
-          570
+          630
         );
         escribir_texto(
           respuestas_texto[respuesta_orden[2]],
           "30",
           "Arial",
           445,
-          680
+          740
         );
         escribir_texto(
           respuestas_texto[respuesta_orden[3]],
           "30",
           "Arial",
           445,
-          790
+          890
         );
       } else {
         if (correcta) {

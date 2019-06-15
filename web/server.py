@@ -275,7 +275,7 @@ def get_users():
 ##############################################
 
 
-@app.route('/set_category_question', methods = ['POST'])
+@app.route('/set_category_and_random_question', methods = ['POST'])
 def set_category_question():
     message = json.loads(request.data)
     id = message['id']
@@ -284,27 +284,16 @@ def set_category_question():
         category = db_session.query(entities.Category
             ).filter(entities.Category.id == id
             ).one()
-        message = {'message': 'Authorized'}
-        session['category_question'] = category.id
-        return Response(message, status=200, mimetype='application/json')
-    except Exception:
-        message = {'message': 'Unauthorized'}
-        return Response(message, status=401, mimetype='application/json')
-
-
-@app.route('/get_random_question', methods=['GET'])
-def get_random_question():
-    db_session = db.getSession(engine)
-    category_id=session['category_question']
-    data=[]
-    try:
+        category_id = category.id
+        data = []
         categoryX=db_session.query(entities.Question).filter(entities.Question.category_id==category_id)
         for category in categoryX:
             data.append(category)
         randomx=random.choice(data)
         return Response(json.dumps(randomx, cls=connector.AlchemyEncoder), mimetype='application/json')
     except Exception:
-        return 0
+        message = {'message': 'Unauthorized'}
+        return Response(message, status=401, mimetype='application/json')
 
 
 ##############################################
