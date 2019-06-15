@@ -14,5 +14,5 @@ function Subir_contenido(){
                 window.location.href="http://127.0.0.1:8080/static/subir_contenido.html"
     }
 function Jugar(){
-                window.location.href="http://127.0.0.1:8080/static/jugar.html"
+                window.location.href="http://127.0.0.1:8080/static/juego.html"
     }

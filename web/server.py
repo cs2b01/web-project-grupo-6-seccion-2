@@ -4,6 +4,7 @@ from model import entities
 import json
 import time
 import datetime
+import random
 from operator import  itemgetter,attrgetter
 
 db = connector.Manager()
@@ -20,6 +21,7 @@ app = Flask(__name__)
 def index():
     session['logged']=None
     session['category']=None
+    session['category_question']=None
     return render_template('dologin.html')
 
 @app.route('/static/<content>')
@@ -273,11 +275,36 @@ def get_users():
 ##############################################
 
 
+@app.route('/set_category_question', methods = ['POST'])
+def set_category_question():
+    message = json.loads(request.data)
+    id = message['id']
+    db_session = db.getSession(engine)
+    try:
+        category = db_session.query(entities.Category
+            ).filter(entities.Category.id == id
+            ).one()
+        message = {'message': 'Authorized'}
+        session['category_question'] = category.id
+        return Response(message, status=200, mimetype='application/json')
+    except Exception:
+        message = {'message': 'Unauthorized'}
+        return Response(message, status=401, mimetype='application/json')
 
 
-
-
-
+@app.route('/get_random_question', methods=['GET'])
+def get_random_question():
+    db_session = db.getSession(engine)
+    category_id=session['category_question']
+    data=[]
+    try:
+        categoryX=db_session.query(entities.Question).filter(entities.Question.category_id==category_id)
+        for category in categoryX:
+            data.append(category)
+        randomx=random.choice(data)
+        return Response(json.dumps(randomx, cls=connector.AlchemyEncoder), mimetype='application/json')
+    except Exception:
+        return 0
 
 
 
