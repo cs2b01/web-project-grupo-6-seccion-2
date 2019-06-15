@@ -3,54 +3,8 @@ Preguntas
 
 
 MARVEL
-¿Cuantas veces se creyó que murió Loki?
-2 <--
-3
-4
-1
 
 
-¿Cuántos eran los finales que vio Dr Strange?
-14212785
-14215125
-14000605 <--
-15215211
-
-¿En que película se introdujo a Black Widow?
-Iron Man <--
-Iron Man 2
-Avengers
-Capitan America
-
-¿Cual de los siguientes no es parte de la primera fase del UCM?
-Doctor Strange <--
-Hawkeye
-Maquina de Guerra
-Black Widow
-
-¿Primero en morir en infinity war?
-Loki
-Gamora 
-The Collector
-Heimdall <--
-
-¿En que película aparece por primera vez el Tesseract?
-Capitan America
-Iron man
-Avengers
-Thor <--
-
-¿Primera aparicion de Hawkeye?
-Capitan America
-Iron man
-Thor <--
-Avengers
-
-¿Villano que más tiempo lleva en los comics de Marvel?
-Loki
-Dr Doom 
-Magneto
-Doctor Octopus ←
 
 ¿Primer Xmen en volverse un Vengador?
 Wolverine
@@ -124,31 +78,14 @@ Iron man
 Sharon Carter <--
 Winter Soldier
 Croosbones
-. 
+.
+
+
+
 Fútbol:
-¿Cuántos mundiales de fútbol ha jugado la Selección peruana?
-1
-6
-3
-5 <--
 
-¿Quién fue el máximo goleador de la Eurocopa 2016?
-Cristiano Ronaldo
-Antoine Griezmann <--
-Kylian Mbappe
-Robert Lewandowski
 
-¿Qué jugador de la Selección francesa fue expulsado en la final del Mundial 2006?
-Patrick Vieira
-Claude Makélélé
-Zinedine Zidane <--
-Thierry Henry
-
-¿Cuántos balones de oro ha ganado Cristiano Ronaldo?
-5 <--
-4
-3
-1
+¿
 
 ¿Cuál selección venció a Chile en la última fecha de las eliminatorias sudamericanas para el Mundial Rusia 2018?
 Brasil <--
@@ -246,18 +183,12 @@ Sevilla
 5-1
 6-0 <--
 
-Star Wars:
-¿Cómo iba a llamarse originalmente ‘Luke Skywalker’?
-Luke Starkiller <--
-Luke Skykiller
-Luke Sunkiller
-Luke Starwalker
 
-¿Cómo consiguió Han Solo el halcón milenario que había pertenecido a Lando Calrissian?
-En un duelo
-La robó
-En un juego de Dejarik
-En un juego de Sabacc <--
+
+Star Wars:
+
+
+
 
 ¿Quién se esconde detrás de Darth Vader?
 Obi-Wan Kenobi
@@ -367,18 +298,12 @@ R2D2
 Todos los anteriores <--
 Ninguno de los anteriores
 
-Animes:
-¿Cuál es el nombre de la protagonista femenina de Elfen Lied?
-Akane
-Elfen
-Lucy <--
-Niu
 
-¿Cuál es el nombre del protagonista de Fairy Tail?
-Gray
-Igneel
-Luffy
-Natsu <--
+
+Animes:
+
+
+
 
 ¿Quién es el personaje principal de School Days?
 Sekai

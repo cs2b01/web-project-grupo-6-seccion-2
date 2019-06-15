@@ -10,7 +10,6 @@ data_images[1] = "/static/images/starwars.jpg";
 data_images[2] = "/static/images/anime.jpg";
 data_images[3] = "/static/images/deportes.jpg";
 data_images[4] = "/static/images/meme.gif";
-
 var category=1;
 var indice=0;
 
@@ -38,6 +37,7 @@ function Retroceder() {
     $('#imagen').attr("src",data_images[indice]);
     document.getElementById("content").innerText =data_categories[indice];
 }
+
 
 function SeleccionarCategoria(){
         var message = JSON.stringify({

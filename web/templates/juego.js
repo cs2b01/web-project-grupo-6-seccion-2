@@ -1,4 +1,19 @@
-const esperar = 3500,random = 1000,extra = 2000,pregunta = 2000,resultado = 2000,cantidad = 5,sprite_inicial = 0;
+$.getJSON("/current", function(data){
+   if(data==null){
+   window.location.href="http://127.0.0.1:8080/static/dologin.html"
+      }
+   else{record = data['record']}
+        });
+
+
+
+const esperar = 3500,
+  random = 1000,
+  extra = 2000,
+  pregunta = 8000,
+  resultado = 2000,
+  cantidad = 5,
+  sprite_inicial = 0;
 
 let c = document.getElementById("app");
 let ctx = c.getContext("2d");
@@ -9,11 +24,10 @@ let elemento = [
   document.getElementById("fondo3"),
   document.getElementById("fondo4")
 ];
-
-
 let cuadro = document.getElementById("pregunta");
 let mal = document.getElementById("mal");
 let bien = document.getElementById("bien");
+let error = document.getElementById("error");
 let i = sprite_inicial,
   max = cantidad - 1;
 let spins,
@@ -33,7 +47,67 @@ let w = 0,
 let rodar = true,
   preguntar = false,
   corregir = false,
-  correcta = true;
+  correcta = false,
+  con_pregunta = true;
+let statment;
+let respuesta_orden = [0, 1, 2, 3];
+let respuestas_texto = ["", "", "", ""];
+
+function escribir_texto(t, f, s, i, j) {
+  ctx.font = f + "px " + s;
+  ctx.fillStyle = "white";
+  let x = (i * window.innerWidth) / 1600;
+  let y = (j * window.innerHeight) / 900;
+  ctx.fillText(t, x, y);
+}
+
+function shuffleArray(array) {
+  for (let i = array.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [array[i], array[j]] = [array[j], array[i]];
+  }
+}
+
+function establecer_pregunta(r) {
+  statment = r.statment;
+  respuestas_texto[0] = r.answer;
+  respuestas_texto[1] = r.wrong1;
+  respuestas_texto[2] = r.wrong2;
+  respuestas_texto[3] = r.wrong3;
+  shuffleArray(respuesta_orden);
+}
+
+function siguiente_pregunta() {
+  let id_ = JSON.stringify({ "id": i });
+  $.ajax({
+    url: "/set_category_question",
+    type: "POST",
+    contentType: "application/json",
+    data: id_,
+    dataType: "json"});
+
+
+    $.ajax({
+    url: "/get_random_question",
+    type: "GET",
+    contentType: "application/json",
+    data: id_,
+    dataType: "json",
+      success: function(response) {
+      establecer_pregunta(response);
+    },
+    error: function(response) {
+      con_pregunta = false;
+    }
+  });
+  let ejemplo = {
+    statment: "Hola",
+    answer: "esta es la respuesta",
+    wrong1: "esta es wrong 1",
+    wrong2: "esta es wrong 2",
+    wrong3: "esta es wrong 3"
+  };
+}
 
 function tiempo_aleatorio() {
   tiempo_espera = esperar + Math.random() * random;
@@ -68,7 +142,7 @@ function actualizar_elemento(tiempo) {
   if (rodar) {
     if (tiempo - tiempo_anterior > tiempo_frame) {
       siguiente_sprite();
-      spins +=1;
+      spins += 0.1;
       tiempo_anterior = tiempo;
       tiempo_frame = spins * spins;
     }
@@ -79,6 +153,7 @@ function actualizar_elemento(tiempo) {
     if (!preguntar) {
       if (tiempo - tiempo_anterior_ex > tiempo_espera_extra) {
         preguntar = true;
+        siguiente_pregunta();
       }
     } else {
       if (!corregir) {
@@ -96,6 +171,8 @@ function actualizar_elemento(tiempo) {
           rodar = true;
           preguntar = false;
           corregir = false;
+          correcta = false;
+          con_pregunta = true;
         }
       }
     }
@@ -133,16 +210,81 @@ function loop(tiempo) {
   restablecer_escalado();
   dibujar(elemento[i]);
   if (preguntar) {
-    if (!corregir) {
-      dibujar(cuadro);
-    } else {
-      if (correcta) {
-        dibujar(bien);
+    if (con_pregunta) {
+      if (!corregir) {
+        dibujar(cuadro);
+        escribir_texto(statment, "40", "Arial", 420, 200);
+        escribir_texto(
+          respuestas_texto[respuesta_orden[0]],
+          "30",
+          "Arial",
+          445,
+          460
+        );
+        escribir_texto(
+          respuestas_texto[respuesta_orden[1]],
+          "30",
+          "Arial",
+          445,
+          570
+        );
+        escribir_texto(
+          respuestas_texto[respuesta_orden[2]],
+          "30",
+          "Arial",
+          445,
+          680
+        );
+        escribir_texto(
+          respuestas_texto[respuesta_orden[3]],
+          "30",
+          "Arial",
+          445,
+          790
+        );
       } else {
-        dibujar(mal);
+        if (correcta) {
+          dibujar(bien);
+        } else {
+          dibujar(mal);
+        }
       }
+    } else {
+      dibujar(error);
     }
   }
   requestAnimationFrame(loop);
 }
+
+function añadir_puntos() {
+  $.ajax({
+    url: "/users",
+    type: "PUT",
+    contentType: "application/json",
+    data: JSON.stringify({
+      "record": (record + 1)
+    }),
+    dataType: "json"
+  });
+}
+
+function corregir_respuesta(r) {
+  if (r) {
+    r = r - 49;
+    if (respuesta_orden[r] === 0) {
+      correcta = true;
+      añadir_puntos();
+    }
+    tiempo_espera_pregunta = 0;
+  }
+}
+
+document.addEventListener("keydown", event => {
+  if (preguntar && con_pregunta && !corregir) {
+    if (event.keyCode < 53 && event.keyCode > 48) {
+      corregir_respuesta(event.keyCode);
+    }
+  }
+});
+
 start();
