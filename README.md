@@ -7,4 +7,5 @@
     -Cristian Caballero
     -Jose Ignacio Huby
 
-Por el momento se encuentra en localhost (port=8080)
+# URI:
+    http://referenciascap-env.kaez2vm9hd.us-east-2.elasticbeanstalk.com/
