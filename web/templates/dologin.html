@@ -73,20 +73,20 @@
             data : message,
             dataType:'json',
             success: function(response){
-            	window.location.href="http://127.0.0.1:8080/static/main_menu.html"
+            	window.location.href="http://3.130.127.150/main_menu"
                 },
             error: function(response){
                 if(response['status']==401){
                 	$('#Incorrecta').show();
                     }
                  else{
-                window.location.href="http://127.0.0.1:8080/static/main_menu.html"
+                window.location.href="http://3.130.127.150/main_menu"
                   }}
         });
     }
 </script>
 <script>function Register(){
-                window.location.href="http://127.0.0.1:8080/static/register.html"
+                window.location.href="http://3.130.127.150/register"
     }</script>
 
 </body>

@@ -1,6 +1,6 @@
 function EnviarDatos(){
             $.ajax({
-                url: 'http://127.0.0.1:8080/users',
+                url: 'http://3.130.127.150/users',
                 type: 'POST',
                 contentType: 'application/json',
                 data: JSON.stringify({
@@ -12,14 +12,14 @@ function EnviarDatos(){
                 }),
                 dataType: 'json',
                 success: function(response){
-                window.location.href="http://127.0.0.1:8080/static/dologin.html"
+                window.location.href="http://3.130.127.150/dologin"
                 },
             error: function(response){
                 if(response['status']==401){
                     $('#Ocupado').show();
                 }
                  else{
-                window.location.href="http://127.0.0.1:8080/static/dologin.html"
+                window.location.href="http://3.130.127.150/dologin"
                   }}
             });
         }

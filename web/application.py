@@ -7,10 +7,14 @@ import datetime
 import random
 from operator import  itemgetter,attrgetter
 
+
+
 db = connector.Manager()
 engine = db.createEngine()
 cache = {} # Users cache
-app = Flask(__name__)
+application=app = Flask(__name__)
+app.secret_key = ".."
+
 
 ##############################################
 #                                            #
@@ -24,9 +28,43 @@ def index():
     session['category_question']=None
     return render_template('dologin.html')
 
-@app.route('/static/<content>')
-def static_content(content):
-    return render_template(content)
+@app.route('/dologin')
+def dologin():
+    return render_template('dologin.html')
+
+@app.route('/gracias')
+def gracias():
+    return render_template('gracias.html')
+
+
+@app.route('/juego')
+def juego():
+    return render_template('juego.html')
+
+
+@app.route('/main_menu')
+def main_menu():
+    return render_template('main_menu.html')
+
+
+@app.route('/rankings')
+def rankings():
+    return render_template('rankings.html')
+
+@app.route('/register')
+def register():
+    return render_template('register.html')
+@app.route('/settings')
+def settings():
+    return render_template('settings.html')
+
+@app.route('/subir_contenido')
+def subir_contenido():
+    return render_template('subir_contenido.html')
+@app.route('/subir_pregunta')
+def subir_pregunta():
+    return render_template('subir_pregunta.html')
+
 
 ##############################################
 #                                            #
@@ -303,6 +341,5 @@ def set_category_question():
 ##############################################
 
 if __name__ == '__main__':
-    app.secret_key = ".."
-    app.run(port=8080, threaded=True, host=('127.0.0.1'))
+    app.run()
 

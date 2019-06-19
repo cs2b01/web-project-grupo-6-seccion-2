@@ -1,6 +1,6 @@
 $.getJSON("/current", function(data){
          if(data==null){
-          window.location.href="http://127.0.0.1:8080/static/dologin.html"
+          window.location.href="http://3.130.127.150/dologin"
          }
              });
 
@@ -56,7 +56,7 @@ function SeleccionarCategoria(){
                 if(response['status']==401){
                     }
                  else{
-                window.location.href="http://127.0.0.1:8080/static/subir_pregunta.html"
+                window.location.href="http://3.130.127.150/subir_pregunta"
                   }}
         });
     }

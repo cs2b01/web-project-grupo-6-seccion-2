@@ -1,11 +1,11 @@
 $.getJSON("/current", function(data){
          if(data==null){
-          window.location.href="http://127.0.0.1:8080/static/dologin.html"
+          window.location.href="http://3.130.127.150/dologin"
          }
              });
 
 function Aportes() {
-     var url = "http://127.0.0.1:8080/rankings_uploads";
+     var url = "http://3.130.127.150/rankings_uploads";
     $("#grid").dxDataGrid({
         dataSource: DevExpress.data.AspNet.createStore({
             key: "id",
@@ -37,7 +37,7 @@ function Aportes() {
 }
 
 function Correctas(){
-     var url = "http://127.0.0.1:8080/rankings_record";
+     var url = "http://3.130.127.150/rankings_record";
     $("#grid").dxDataGrid({
         dataSource: DevExpress.data.AspNet.createStore({
             key: "id",

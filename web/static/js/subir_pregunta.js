@@ -4,14 +4,15 @@
         });
     $.getJSON("/current", function(data){
           if(data==null){
-          window.location.href="http://127.0.0.1:8080/static/dologin.html"
+          window.location.href="http://3.130.127.150/dologin"
          }
           else{uploads = data['uploads']}
         });
 
+
     function Enviar(){
             $.ajax({
-                url: 'http://127.0.0.1:8080/questions',
+                url: 'http://3.130.127.150/questions',
                 type: 'POST',
                 contentType: 'application/json',
                 data: JSON.stringify({
@@ -25,20 +26,20 @@
                 dataType: 'json',
                 success: function(response){
                     AumentoUploads();
-                window.location.href="http://127.0.0.1:8080/static/gracias.html"
+                window.location.href="http://3.130.127.150/gracias"
                 },
                 error: function(response){
                 if(response['status']==401){
                 }
                  else{
                  AumentoUploads();
-                window.location.href="http://127.0.0.1:8080/static/gracias.html"
+                window.location.href="http://3.130.127.150/gracias"
                   }}
             });
         }
         function AumentoUploads() {
             $.ajax({
-                url: 'http://127.0.0.1:8080/users',
+                url: 'http://3.130.127.150/users',
                 type: 'PUT',
                 contentType: 'application/json',
                 data: JSON.stringify({

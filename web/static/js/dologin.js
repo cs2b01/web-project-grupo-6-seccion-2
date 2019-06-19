@@ -19,7 +19,7 @@ function getData(){
                 	$('#Incorrecta').show();
                     }
                  else{
-                window.location.href="http://127.0.0.1:8080/static/main_menu.html"
+                window.location.href="http://3.130.127.150/main_menu"
                   }}
         });
     }
